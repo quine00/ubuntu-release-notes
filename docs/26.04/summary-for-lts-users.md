@@ -60,6 +60,10 @@ The default video player is now [Showtime](https://salsa.debian.org/gnome-team/s
 
 Thumbnailing for video and audio files is now provided by [gst-thumbnailers](https://salsa.debian.org/gnome-team/gst-thumbnailers), replacing the `totem-video-thumbnailer`. These thumbnailers are written using the Rust GStreamer bindings and rely on the [Glycin](https://gitlab.gnome.org/GNOME/glycin) library for image handling. They do a better job at finding "interesting" frames than the previous Totem thumbnailers.
 
+### LocalSearch
+
+The Tracker Miners indexer has been renamed to LocalSearch (see the [announcement](https://blogs.gnome.org/carlosg/2024/07/14/goodbye-tracker-hello-tinysparql-and-localsearch/)). Ubuntu 26.04 ships a substantial version upgrade from 3.8.2 to 3.11. Of note, indexing of audio/video files, ISO files, and certain zip-compressed office files will require selection of *Install third-party software for graphics and Wi-Fi hardware and additional media formats* during installation. If this option is not selected, the extractors can be manually installed after installation with `sudo apt install localsearch-extractor-ffmpeg localsearch-extractor-iso localsearch-extractor-office`.
+
 ### Wayland session
 :::{versionchanged} 25.10
 :::
