@@ -52,6 +52,14 @@ The Image Viewer app is now provided by [Loupe](https://apps.gnome.org/Loupe/) i
 
 The Terminal app is now provided by [Ptyxis](https://gitlab.gnome.org/chergert/ptyxis/-/blob/main/README.md?ref_type=heads) instead of GNOME Terminal.
 
+### New default video player
+
+The default video player is now [Showtime](https://salsa.debian.org/gnome-team/showtime), replacing Totem.
+
+### New video and audio thumbnailers
+
+Thumbnailing for video and audio files is now provided by [gst-thumbnailers](https://salsa.debian.org/gnome-team/gst-thumbnailers), replacing the `totem-video-thumbnailer`. These thumbnailers are written using the Rust GStreamer bindings and rely on the [Glycin](https://gitlab.gnome.org/GNOME/glycin) library for image handling. They do a better job at finding "interesting" frames than the previous Totem thumbnailers.
+
 ### Wayland session
 :::{versionchanged} 25.10
 :::
